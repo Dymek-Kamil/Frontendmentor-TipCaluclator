@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  font-family: "Space Mono";
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+  top: 10%;
+}
+.container {
+  width: 60vw;
+  height: 50vh;
+  background: hsl(189, 41%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 50px hsl(184, 14%, 56%);
+}
+.left,
+.right {
+  width: 47%;
+  height: 87%;
+}
+.right {
+  background: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  position: relative;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bill,
+.people-number {
+  height: 25%;
+  position: relative;
+}
+.tip {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  text-align: right;
+  width: 90%;
+  height: 40px;
+  border: none;
+  background: hsl(180, 23%, 94%);
+  font-size: 1.5em;
+  color: hsl(186, 14%, 43%);
+  border-radius: 5px;
+}
+p {
+  color: hsl(186, 14%, 43%);
+}
+.percantage {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.tips,
+.tipss {
+  width: 28%;
+  height: 50px;
+  background: hsl(183, 100%, 15%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  user-select: none;
+}
+.bottom input {
+  background: hsl(180, 23%, 94%);
+  color: hsl(186, 14%, 43%);
+  text-align: center;
+}
+.tip-amount,
+.total {
+  height: 25%;
+  width: 190%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(5%);
+}
+.tip-amount p,
+.total p {
+  width: 50%;
+  color: white;
+}
+.tip-amount p span,
+.total p span {
+  width: 50%;
+  color: hsl(186, 14%, 43%);
+}
+h1 {
+  width: 50%;
+  color: hsl(183, 97%, 41%);
+}
+.reset {
+  width: 90%;
+  position: absolute;
+  bottom: 10%;
+  height: 50px;
+  background: hsl(183, 100%, 21%);
+  border-radius: 5px;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(186, 98%, 18%);
+  user-select: none;
+}
+.tips:hover,
+.reset:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(186, 98%, 18%);
+}
+.bill input:hover,
+.bottom input:hover {
+  border: 2px solid hsl(185, 52%, 55%);
+}
+.zero {
+  border: 2px solid red;
+}
+.p {
+  position: absolute;
+  right: 10%;
+  top: -2%;
+  color: red;
+}
+.display {
+  display: none;
+}
+.clicked {
+  background: hsl(186, 100%, 13%);
+  color: hsl(186, 100%, 37%);
+}
